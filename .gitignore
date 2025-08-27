@@ -1,17 +1,30 @@
 # .gitignore
 
-# Ignore virtual environment
+# 🔒 Virtual Environment
 .venv/
 
-# Ignore Python cache
+# 🐍 Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Ignore system files
+# 🧪 Package metadata
+*.egg-info/
+
+# 📁 Local instance configs or SQLite
+instance/
+*.sqlite3
+
+# 🔑 Environment variable files (for secrets)
+.env
+
+# ⚙️ VS Code settings (optional)
+.vscode/
+
+# 🗑 OS-generated files
 .DS_Store
 Thumbs.db
 
-# VS Code settings (optional)
-.vscode/
+# 📝 Logs
+*.log
